@@ -1,0 +1,51 @@
+<head>
+   <link rel="shortcut icon" href="../public/download.jpg">
+    <title>Latest movies</title>
+</head>
+
+
+<body>
+<h1 class="text-center" ><i>movie releases and reviews</i> </h1>
+</body>
+
+
+<template class='layout' name="layout">
+ <div class="button">
+    {{> loginButtons }}
+ </div>
+
+    <div class="nav">
+           {{> yield}}
+     </div>
+
+</template>
+
+<template name="login">
+    <a href="/homepage">enter homepage</a>
+</template>
+
+
+<template name="homepage">
+     {{#if currentUser}}
+         <h3>Movie is a art which influences a large section of people</h3>
+     {{>nav}}
+       {{ else}}
+           {{>check}}
+        {{/if}}
+</template>
+
+
+<template  name="nav">
+    Languages
+    <a href="/english"><li>english</li></a>
+    <a href="/hindi"><li>hindi</li></a>
+    <a href="/telugu"><li>telugu</li></a>
+</template>
+
+<template name="check">
+    please check your login details
+    <a href="/homepage">enter homepage</a>
+</template>
+
+
+

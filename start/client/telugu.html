@@ -1,0 +1,33 @@
+
+<template  name="telugumovies">
+    {{#if currentUser}}
+    {{>nav}}
+    <table class="table telugu">
+        <tr>
+            <th>movie name </th>
+            <th>cast</th>
+            <th>director</th>
+        </tr>
+        <tr>
+            <td>bahubali </td>
+            <td> prabhas,sathyaraj,rana,ramyakrishna</td>
+            <td>rajamoulli</td>
+        </tr>
+        <tr>
+            <td>srimanthudu</td>
+            <td>maheshbabu , shruti hasaan ,jagapathibabu</td>
+            <td>koratala siva</td>
+        </tr>
+        <tr>
+            <td>ok bangaram</td>
+            <td>  Dulquer Salmaan, Nithya Menon, Prakash Raj</td>
+            <td>mani ratnam</td>
+        </tr>
+    </table>
+        {{>comments}}
+        {{>commentdisplay}}
+{{ else}}
+{{>check}}
+{{/if}}
+</template>
+

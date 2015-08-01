@@ -1,0 +1,32 @@
+<template class="english" name="englishmovies">
+{{#if currentUser}}
+    {{>nav}}
+    <table class="table english">
+        <tr>
+            <th>movie name </th>
+            <th>cast</th>
+            <th>director</th>
+        </tr>
+        <tr>
+            <td>Terminator Genisys </td>
+            <td> Arnold Schwarzenegger, Jason Clarke, Emilia Clarke</td>
+            <td>Alan Taylor </td>
+        </tr>
+        <tr>
+            <td>Magic Mike XXL</td>
+            <td>Channing Tatum, Joe Manganiello, Matt Bomer</td>
+            <td>Gregory Jacobs</td>
+        </tr>
+        <tr>
+            <td>jurassic World </td>
+            <td>  Chris Pratt, Bryce Dallas Howard, Ty Simpkins</td>
+            <td>Colin Trevorrow</td>
+        </tr>
+    </table>
+    {{>comments}}
+     {{>commentdisplay}}
+{{ else}}
+    {{>check}}
+{{/if}}
+</template>
+

@@ -1,0 +1,49 @@
+/* CSS declarations go here */
+table, th, td {
+    text-align: center;
+    border: 1px solid black !important;
+    border-collapse:collapse !important;
+}
+
+table{
+    width:50% !important;
+    margin-right:32% !important;
+    float:right !important;
+}
+
+body h1 {
+    margin:0 !important;
+    padding-bottom:4px !important;
+    background-color:rosybrown !important;
+
+}
+
+
+
+#comments{
+
+    float:right !important;
+}
+
+.comment{
+    width:99% !important;
+    height:3em !important;
+}
+
+.button{
+    background-color:darkseagreen;
+}
+
+#time{
+    float:right;
+}
+
+
+
+.english{
+    background-image: url("/public/images/image.jpg");
+}
+
+
+
+

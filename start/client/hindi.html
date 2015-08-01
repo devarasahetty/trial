@@ -1,0 +1,32 @@
+
+<template name="hindimovies">
+    {{#if currentUser}}
+    {{>nav}}
+    <table class="table hindi">
+        <tr>
+            <th>movie name </th>
+            <th>cast</th>
+            <th>director</th>
+        </tr>
+        <tr>
+            <td>Bajrangi Bhaijaan  </td>
+            <td>Salman Khan, Kareena Kapoor, Harshaali Malthotra </td>
+            <td>Kabir Khan</td>
+        </tr>
+        <tr>
+            <td>Any Body Can Dance 2</td>
+            <td>Lauren Gottlieb, Shraddha Kapoor, Varun Dhawan </td>
+            <td>remo</td>
+        </tr>
+        <tr>
+            <td>Gabbar is Back </td>
+            <td>  Akshay Kumar, Shruti K. Haasan, Sunil Grover</td>
+            <td> Radha Krishna Jagarlamudi</td>
+        </tr>
+    </table>
+        {{>comments}}
+        {{>commentdisplay}}
+    {{ else}}
+        {{>check}}
+    {{/if}}
+</template>
